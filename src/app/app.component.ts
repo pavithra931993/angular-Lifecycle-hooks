@@ -6,9 +6,13 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  name = "Example";
-  show = false;
-  toggle() {
-    this.show = !this.show;
+  name = "<span>Example</span>";
+
+  fruits = ["Mengo", "Orange", "Banana"];
+
+  constructor() {}
+
+  addFruit(item) {
+    this.fruits.push(item);
   }
 }
